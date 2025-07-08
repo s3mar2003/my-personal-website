@@ -1,0 +1,143 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0 20px 40px;
+  background: #e8f0fe;
+  color: #333;
+}
+
+header {
+  background-color: #2a4365;
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+.nav-list {
+  list-style: none;         /* إزالة النقاط */
+  padding: 0;
+  margin: 0;
+  display: flex;            /* عرض أفقي */
+  justify-content: center;  /* توسيط العناصر */
+  gap: 30px;                /* مسافة بين العناصر */
+  background-color: #2a4365;
+  padding: 15px 0;
+}
+
+.nav-list li {
+  color: #a8c0ff;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.nav-list li:hover {
+  color: white;
+}
+
+#image img {
+  display: block;
+  margin: 20px auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #5a7cd1;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(90,124,209,0.5);
+}
+
+h2 {
+  color: #2a4365;
+  border-bottom: 3px solid #5a7cd1;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+p {
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 0 auto 30px;
+  font-size: 16px;
+}
+
+ul {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+main section {
+  background: #fff;
+  padding: 20px 30px;
+  max-width: 750px;
+  margin: 0 auto 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+}
+
+#cv button {
+  background-color: #5a7cd1;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+#cv button:hover {
+  background-color: #4355a1;
+}
+
+a[href="#top"] {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #5a7cd1;
+  font-weight: 600;
+  transition: color 0.3s ease;
+  font-size: 15px;
+}
+
+a[href="#top"]:hover {
+  color: #4355a1;
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #2a4365;
+  color: #cdd7f7;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 14px;
+  border-radius: 15px 15px 0 0;
+}
+
+footer a {
+  color: #a8c0ff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: white;
+}
