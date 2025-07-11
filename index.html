@@ -1,84 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>my personal page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Samar's Profile</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
 </head>
 <body>
-    <header>
-       <nav>
-  <ul class="nav-list">
-    <li>CV</li>
-    <li>Interests</li>
-    <li>Portfolio</li>
-    <li>Contact</li>
-  </ul>
-</nav>
-          <section id="image">
-            <img src="samar.jfif" alt="samar">
-          </section>
-        <section id="about">
-      <h2>about</h2>
-      <p>Im a computer science graduate, learning web development and aspiring to become a developer.</p>
+  <input type="checkbox" id="toggle-dark" class="toggle-dark" hidden />
+  <header>
+    <nav class="navbar">
+      <div class="logo">Samar</div>
+
+      
+      <label for="nav-toggle" class="hamburger" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </label>
+      <input type="checkbox" id="nav-toggle" hidden />
+
+      <ul class="nav-list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#cv">CV</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <!-- زر تبديل الوضع -->
+          <label for="toggle-dark" class="dark-mode-toggle" aria-label="Toggle dark mode">
+            <i class="fas fa-moon"></i>
+          </label>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" class="about-section">
+      <div class="about-card">
+        <img src="samar.jfif" alt="Samar" class="profile-img" />
+        <h2>Hello, I'm Samar</h2>
+        <p>
+          A Computer Science graduate passionate about building clean, minimal
+          websites. Learning web development to become a creative and helpful
+          developer.
+        </p>
+      </div>
     </section>
-    </header>
-    <main>
-        <section id="skills">
-      <h2>Interests</h2>
+
+    <section id="skills" class="skills">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>PHP</span>
+        <span>MySQL</span>
+        <span>Git / GitHub</span>
+      </div>
+    </section>
+
+    <section id="work" class="work">
+      <h2>My Work</h2>
       <ul>
-        <li>HTML / CSS</li>
-        <li>JavaScript</li>
-        <li>PHP & MySQL</li>
-        <li>Git / GitHub</li>
+        <li>Book Management System</li>
+        <li>Task Management Project</li>
       </ul>
     </section>
 
-    <section id="my work">
-      <h2>my work</h2>
+    <section id="certificates" class="certificates">
+      <h2>Certificates & Completed Courses</h2>
       <ul>
-        <li>book management project/li>
-        <li>task management project</li>
-        
+        <li>Front-End Web Development - Coursera</li>
+        <li>HTML & CSS Foundations - freeCodeCamp</li>
+        <li>JavaScript Basics - Udemy</li>
       </ul>
     </section>
 
-    <section id="certificates">
-    <h2>Certificates & Completed Courses</h2>
-    <ul>
-      <li>Front-End Web Development - Coursera</li>
-      <li>HTML & CSS Foundations - freeCodeCamp</li>
-      <li>JavaScript Basics - Udemy</li>
-    </ul>
-  </section>
-   
-  <section id="testimonials">
-    <h2>Testimonials</h2>
-    <blockquote>
-      "Samar is a fast learner and showed great commitment throughout the project."
-     
-    </blockquote>
-  </section>
-
-    <section id="cv">
-    <h2>download cv</h2>
-    <a href="cv.pdf" download>
-      <button>download cv</button>
-    </a>
-  </section>
-  
-    <a href="#top">Go to Top</a>
-    
-    </main>
-
-    <footer>
-        <section id="contact">
-      <h2>call me</h2>
-      <a href="mailto:samar@example.com">Email</a>
-      <a href="https://www.linkedin.com">Linkedin</a>
+    <section id="cv" class="cv center">
+      <h2>Download CV</h2>
+      <a href="cv.pdf" download class="cv-btn"
+        ><button><i class="fa-solid fa-download"></i> Download CV</button></a
+      >
     </section>
-    </footer>
-    
+
+    <div class="go-top center">
+      <a href="#top"><i class="fa-solid fa-arrow-up"></i> Back to Top</a>
+    </div>
+  </main>
+
+  <footer>
+    <section id="contact">
+      <p>Contact Me:</p>
+      <a href="mailto:samar@example.com"><i class="fa-solid fa-envelope"></i></a>
+      <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+    </section>
+  </footer>
 </body>
 </html>
