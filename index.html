@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Samar's Profile</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+</head>
+<body id="top">
+  <input type="checkbox" id="toggle-dark" class="toggle-dark" hidden />
+  <header>
+    <nav class="navbar">
+      <div class="logo">Samar</div>
+
+      <!-- همبرغر للقوائم الصغيرة -->
+      <label for="nav-toggle" class="hamburger" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </label>
+      <input type="checkbox" id="nav-toggle" hidden />
+
+     <ul class="nav-list">
+  <li><a href="#about">About</a></li>
+  <li><a href="#skills">Skills</a></li>
+  <li><a href="#work">Work</a></li>
+  <li><a href="#certificates">Certificates</a></li>
+  <li><a href="#contact">Contact</a></li>
+
+  <!-- زر تبديل الوضع -->
+  <li>
+    <input type="checkbox" id="toggle-dark" hidden />
+    <label for="toggle-dark" class="dark-toggle" aria-label="Toggle dark mode">
+      <i class="fa-solid fa-moon"></i>
+    </label>
+  </li>
+
+  <!-- زر تحميل السي في -->
+  <li class="cv-item">
+    <label class="upload-cv-btn" for="cvFile">
+      <i class="fa-solid fa-download"></i> Download CV
+    </label>
+    <input type="file" id="cvFile" style="display: none;" />
+  </li>
+</ul>
+
+
+   
+   
+
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" class="about-section">
+      <div class="about-card">
+        <img src="samar.jfif" alt="Samar" class="profile-img" />
+        <h2>Hello, I'm Samar</h2>
+        <p>
+          A Computer Science graduate passionate about building clean, minimal
+          websites. Learning web development to become a creative and helpful
+          developer.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+  <div class="skill-item"><i class="fab fa-html5"></i> HTML</div>
+  <div class="skill-item"><i class="fab fa-css3-alt"></i> CSS</div>
+  <div class="skill-item"><i class="fab fa-js-square"></i> JavaScript</div>
+  <div class="skill-item"><i class="fab fa-php"></i> PHP</div>
+  <div class="skill-item"><i class="fas fa-database"></i> MySQL</div>
+  <div class="skill-item"><i class="fab fa-git-alt"></i> Git / GitHub</div>
+</div>
+
+    </section>
+
+   <section id="work" class="work">
+  <h2>My Work</h2>
+  <div class="work-grid">
+    <div class="work-card">
+      <i class="fa-solid fa-hand-holding-heart"></i>
+      <h3>Social Case Management System</h3>
+      <p>PHP-based system to manage medical, educational, and financial social cases with user roles and intervention tracking.</p>
+    </div>
+
+    <div class="work-card">
+      <i class="fa-solid fa-book"></i>
+      <h3>Book Management System</h3>
+      <p>A CRUD application using PHP and MySQL to manage library books with search and category filters.</p>
+    </div>
+
+    <div class="work-card">
+      <i class="fa-solid fa-list-check"></i>
+      <h3>Task Management Project</h3>
+      <p>A task tracking app with deadline support and completion status using PHP and local storage.</p>
+    </div>
+
+    <div class="work-card">
+      <i class="fa-solid fa-laptop-code"></i>
+      <h3>Personal Portfolio Website</h3>
+      <p>Responsive personal website to showcase skills, projects, and certificates using HTML, CSS, and JavaScript.</p>
+    </div>
+
+    <div class="work-card">
+      <i class="fa-solid fa-user-graduate"></i>
+      <h3>Student Result System</h3>
+      <p>Online system to manage student grades, view results, and calculate averages using PHP & MySQL.</p>
+    </div>
+
+    <div class="work-card">
+      <i class="fa-solid fa-comments"></i>
+      <h3>Feedback Collection App</h3>
+      <p>Allows users to submit feedback on services; includes admin panel to review, categorize, and respond.</p>
+    </div>
+
+    
+  </div>
+</section>
+
+
+
+    <section id="certificates" class="certificates">
+  <h2>Certificates & Completed Courses</h2>
+  <div class="certificates-grid">
+
+    <div class="certificate-card">
+      <i class="fa-solid fa-code"></i>
+      <h3>Front-End Web Development</h3>
+      <p>Coursera - 2024</p>
+      <!-- <a href="#">View Certificate</a> -->
+    </div>
+
+    <div class="certificate-card">
+      <i class="fa-brands fa-free-code-camp"></i>
+      <h3>HTML & CSS Foundations</h3>
+      <p>freeCodeCamp - 2023</p>
+    </div>
+
+    <div class="certificate-card">
+      <i class="fa-brands fa-js"></i>
+      <h3>JavaScript Basics</h3>
+      <p>Udemy - 2023</p>
+    </div>
+
+    <div class="certificate-card">
+      <i class="fa-solid fa-database"></i>
+      <h3>SQL for Beginners</h3>
+      <p>SoloLearn - 2024</p>
+    </div>
+
+    <div class="certificate-card">
+      <i class="fa-brands fa-git-alt"></i>
+      <h3>Version Control with Git</h3>
+      <p>Codecademy - 2023</p>
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- <section id="cv" class="cv center">
+      <h2>Download CV</h2>
+      <a href="cv.pdf" download class="cv-btn"
+        ><button><i class="fa-solid fa-download"></i> Download CV</button></a
+      >
+    </section> -->
+
+   <a href="#top" id="goTop" class="go-top-link">
+    <i class="fa-solid fa-arrow-up"></i> Top
+  </a>
+</body>
+  </main>
+
+  <footer>
+  <section id="contact" class="footer-section">
+    <p>Contact Me:</p>
+    <div class="social-icons">
+      <a href="mailto:samar@example.com" aria-label="Send Email">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener" aria-label="LinkedIn Profile">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/yourprofile" target="_blank" rel="noopener" aria-label="GitHub Profile">
+        <i class="fa-brands fa-github"></i>
+      </a>
+    </div>
+    <p class="footer-copy">&copy; 2025 Samar Moamer. All rights reserved.</p>
+  </section>
+</footer>
+
+</body>
+</html>
